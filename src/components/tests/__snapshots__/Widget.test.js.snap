@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Widget component matches the snapshop 1`] = `
+<div
+  className="ant-card ant-card-bordered"
+>
+  <div
+    className="ant-card-head"
+  >
+    <div
+      className="ant-card-head-wrapper"
+    >
+      <div
+        className="ant-card-head-title"
+      >
+        Warsaw
+      </div>
+    </div>
+  </div>
+  <div
+    className="ant-card-body"
+    style={undefined}
+  >
+    <div>
+      <p>
+        Temp: 
+        3
+        ℃
+        <br />
+        <small>
+          1
+          ℃ - 
+          4
+          ℃
+        </small>
+      </p>
+      <p>
+        Humidity: 
+        99
+      </p>
+      <p>
+        Pressure: 
+        1021
+      </p>
+    </div>
+  </div>
+  <ul
+    className="ant-card-actions"
+  >
+    <li
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <span>
+        <i
+          className="anticon anticon-reload"
+        />
+      </span>
+    </li>
+    <li
+      style={
+        Object {
+          "width": "50%",
+        }
+      }
+    >
+      <span>
+        <i
+          className="anticon anticon-delete"
+        />
+      </span>
+    </li>
+  </ul>
+</div>
+`;
