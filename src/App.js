@@ -9,8 +9,8 @@ import Weather from 'containers/Weather';
 import store from './store';
 import './App.css';
 
-class App extends React.Component {
-  render(): Node {
+class App extends React.Component<*> {
+  render(): Provider {
     return (
       <Provider store={store}>
         <Router>

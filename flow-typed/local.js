@@ -11,9 +11,11 @@ declare type ApiResponse = {
 }
 
 declare type WeatherRow = {
-  id: number,
+  temperature: number,
+  pressure: number,
+  humidity: number,
+  tempMin: number,
+  tempMax: number,
   name: string,
-  login: string,
-  stars: number,
-  createdAt: string,
+  icon: string,
 };

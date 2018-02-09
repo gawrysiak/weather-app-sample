@@ -8,6 +8,12 @@ import { searchWeather } from './store/actions';
 
 const { Header } = Layout;
 
+type Props = {
+  query: string,
+  searchWeather: SyntheticKeyboardEvent<EventTarget> => void,
+  items: Array<WeatherRow>,
+};
+
 class Weather extends React.Component<Props> {
   static defaultProps = {
     items: [],
@@ -17,7 +23,7 @@ class Weather extends React.Component<Props> {
     this.props.searchWeather(event.target.value);
   }
 
-  render(): Node {
+  render(): Layout {
     return (
       <Layout>
         <Header>
@@ -46,12 +52,12 @@ class Weather extends React.Component<Props> {
   }
 }
 
-const mapStateToProps = (state): Props => ({
+const mapStateToProps = state => ({
   query: state.weather.query,
   items: state.weather.items,
 });
 
-const mapDispatchToProps = (dispatch): Props => ({
+const mapDispatchToProps = dispatch => ({
   searchWeather: (query: string): void => dispatch(searchWeather(query)),
 });
 

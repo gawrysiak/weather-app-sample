@@ -13,7 +13,7 @@ type Props = {
 }
 
 class Widget extends React.Component<Props> {
-  render(): Node {
+  render(): Card {
     return (
       <Card
         title={this.props.data.name}
